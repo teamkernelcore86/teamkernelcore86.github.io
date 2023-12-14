@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Kernel Core 86</title>
+    <title>Code Box with Copy to Clipboard and Syntax Highlighting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <style>
         #codeBox {
             border: 1px solid #ccc;
@@ -23,9 +25,12 @@
     </style>
 </head>
 <body>
-    <div id="codeBox">
-        <p>    loadstring(game:HttpGet("https://raw.githubusercontent.com/teamkernelcore86/MC6/main/main.lua</p>
-        <p>}</p>
+    <div id="codeBox" class="language-javascript">
+        <pre>
+            <code>
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/kernelcore32/MC6/main/main.lua"))()
+            </code>
+        </pre>
     </div>
 
     <button id="copyButton" onclick="copyToClipboard()">Copy to Clipboard</button>
@@ -41,8 +46,10 @@
             document.execCommand('copy');
             document.body.removeChild(textArea);
 
-            alert("Loadstring has been copied to clipboard!");
+            alert("Code has been copied to clipboard!");
         }
+
+        Prism.highlightAll();
     </script>
 </body>
 </html>
