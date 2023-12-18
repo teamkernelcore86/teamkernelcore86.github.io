@@ -1,183 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Team Kernel Core 86</title>
+        <link rel="icon" href="https://raw.githubusercontent.com/teamkernelcore86/teamkernelcore86.github.io/main/favicon.ico" type="image/x-icon">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Kernel Core 86</title>
-    <link rel="icon" href="https://raw.githubusercontent.com/teamkernelcore86/teamkernelcore86.github.io/main/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-    <style>
-        body {
-            text-align: center;
-        }
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+        <link rel="stylesheet" href="style.css">
 
-        h1 {
-            margin-top: 50px;
-        }
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+        <script src="script.js" defer></script>
+    </head>
 
-        p {
-            margin-bottom: 50px;
-        }
+    <body>
+        <h1>Team Kernel Core 86</h1>
+        <p>Welcome to the official website of Team Kernel Core 86!</p>
 
-        .code-container {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 30px;
-            font-family: 'Courier New', monospace;
-            height: 130px;
-            overflow: auto;
-        }
+        <p>Team Kernel Core 86 is a Luau based organization which creates graphical user interfaces and enviroment manipulators.</p>
 
-        .separator {
-            display: inline-block;
-            width: 1px;
-            height: 10px;
-            background-color: #ccc;
-            margin: 0 5px;
-        }
+        <h2 id="license">License</h2>
 
-        .copy-btn {
-            cursor: pointer;
-            padding: 5px 10px;
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            margin-bottom: 20px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 30px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        #about,
-        #contributing,
-        #recommended {
-            text-align: left;
-        }
+        <div class="license-box">
+            <pre>
+        Copyright (c) 2023 Team Kernel Core 86
         
-        #about p,
-        #contributing p,
-        #recommended p {
-            text-align: left;
-        }
-    </style>
-</head>
-
-<body>
-    <h1>Team Kernel Core 86</h1>
-    <p>Welcome to the official website of Team Kernel Core 86.</p>
-
-    <div class="code-container language-javascript">
-        <pre>
-            <code>
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/teamkernelcore86/MC6/main/main.lua"))()
-            </code>
-        </pre>
-    </div>
-    <button class="copy-btn" onclick="copyToClipboard(this)">Copy to Clipboard</button>
-
-    <div class="code-container language-javascript">
-        <pre>
-            <code>
-                // Coming soon!
-            </code>
-        </pre>
-    </div>
-    <button class="copy-btn" onclick="copyToClipboard(this)">Copy to Clipboard</button>
-
-    <h2>Table of Contents</h2>
-    <table>
-        <tr>
-            <td><a href="#about">About : Section 1</a></td>
-        </tr>
-        <tr>
-            <td><a href="#recommended">Recommended : Section 2</a></td>
-        </tr>
-        <tr>
-            <td><a href="#contributing">Contributing : Section 3</a></td>
-        </tr>
-    </table>
-
-    <h2 id="about">About</h2>
-    <p>Team Kernel Core 86 is a group of Lua scripters. It was originally founded to create and maintain the Noto Executor in C#, but I later
-    decided to change it to lua scripting. Team Kernel Core 86 creates graphical user interfaces, scripts and enviroment changers to overall change the enviroment of a experience
-    within Roblox. We mostly dedicate our time to maintain MC6 and MC7. You might be wondering what MC6 and MC7 is? Well they are graphical user interfaces
-    used to exploit within a Roblox experience. They can change the sky, add sound, add particles and so much more. I am to lazy to write more stuff. :D</p>
-
-    <h2 id="contributing">Contributing</h2>
-    <p>Since I mostly dedicate my time maintaining lua scripts, your contributions helps us a lot. You are fully welcome contributing to our open source projects, as long as you follow our code of conduct. </p>
-
-    <h2 id="recommended">Recommended</h2> 
-    <p>To exploit in Roblox you are required to own an executor. There are many popular ones out there like Fluxus, Delta, etc. In this list I am going to show you some recommended executors:</p>
-
-    <div class="box-container">
-        <div class="info-box">
-        <h3>Fluxus</h3>
-        <p>Maintained: <span class="separator"></span> No</p>
-        <p>Bypasses Hyperion: <span class="separator"></span> No</p>
-        <p>Safe: <span class="separator"></span> Yes</p>
-        <p>Status: <span class="separator"></span> Patched</p>
-        <p>
-            URL: <span class="separator"></span>
-            <a href="https://fluxteam.net">Fluxteam's Website</a>
-        </p>
-    </div>
-
-        <div class="info-box">
-        <h3>NetflixCE</h3>
-        <p>Maintained: <span class="separator"></span> Yes</p>
-        <p>Bypasses Hyperion: <span class="separator"></span> Yes</p>
-        <p>Safe: <span class="separator"></span> Yes</p>
-        <p>Status: <span class="separator"></span> Running</p>
-        <p>
-            URL: <span class="separator"></span>
-            <a href="https://github.com/IShade4Real/NetflixCE">NeflixCE's Repository</a>
-        </p>
-    </div>
-
-        <div class="info-box">
-        <h3>Delta</h3>
-        <p>Maintained: <span class="separator"></span> Yes</p>
-        <p>Bypasses Hyperion: <span class="separator"></span> Yes</p>
-        <p>Safe: <span class="separator"></span> Yes</p>
-        <p>Status: <span class="separator"></span> Running</p>
-        <p>
-            URL: <span class="separator"></span>
-            <a href="https://deltaexploits.net">Delta's Website</a>
-        </p>
-    </div>
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
         
-</div>
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+            </pre>
+        </div>       
+        <br>
+        <section class="feature-grid">
+            <div class="feature-card">
+                <h3>Open Source</h3>
+                <p>All Team Kernel Core 86 projects are open source. Which means all users can contribute their amazing ideas as long as they follow a simple condition!</p>
+            </div>
+            <div class="feature-card">
+                <h3>Fast</h3>
+                <p>Team Kernel Core 86 uses the Luau language for it's work. Which means our software is fast, reliable and easy!</p>
+            </div>
+            <div class="feature-card">
+                <h3>Secure</h3>
+                <p>Team Kernel Core 86 projects is adfree and 100% secure. We promise to never add any kind of malware to your local computer. Any developers catched in doing so will be immidiantly removed from
+                   the team.
+                </p>
+            </div>
+        </section>
 
-    <script>
-        function copyToClipboard(button) {
-            var container = button.previousElementSibling;
-            var textArea = document.createElement("textarea");
-            textArea.value = container.innerText;
-            document.body.appendChild(textArea);
+        <h2 id="documentation">Documentation</h2>
+        <p>Team Kernel Core 86 takes usage of the Luau language and Luau compiler to create our open source projects.</p>
 
-            textArea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textArea);
-        }
+        <p>We are the owners of reliable graphical user interfaces like MC6 and MC8. These user interfaces are used to change the enviroment of a experience within
+           the Roblox platform. <br> You can change the skybox, add sounds, tilt the baseplate, unanchor parts, etc. Although tilting the baseplate only works within an experience with a baseplate.
+        </p>
 
-        Prism.highlightAll();
-    </script>
-</body>
+        <p>We are maintaining the following user interfaces:</p>
 
+        <ul>
+            <li>MC6</li>
+            <li>MC7</li>
+            <li>MC8</li>
+        </ul>
+
+        <div class="code-container language-javascript">
+            <pre>
+                <code>
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/teamkernelcore86/MC6/main/main.lua"))()
+                </code>
+            </pre>
+        </div>
+        <script>
+            Prism.highlightAll();
+        </script>
+
+        <h4>Theme</h4>
+        <div class="theme-buttons">
+            <button onclick="toggleTheme('light')">Light Theme</button>
+            <button onclick="toggleTheme('dark')">Dark Theme</button>
+        </div>
+    </body>
 </html>
