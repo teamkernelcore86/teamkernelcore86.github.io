@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Kernel Core 86</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/teamkernelcore86/teamkernelcore86.github.io/main/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <style>
-        #container {
+        .code-container {
             border: 1px solid #ccc;
             padding: 10px;
             margin-bottom: 20px;
@@ -16,7 +17,7 @@
             overflow: auto;
         }
 
-        #copyButton {
+        .copy-btn {
             cursor: pointer;
             padding: 5px 10px;
             background-color: #4CAF50;
@@ -27,19 +28,27 @@
     </style>
 </head>
 <body>
-    <div id="container" class="language-javascript">
+    <div class="code-container language-javascript">
         <pre>
             <code>
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/kernelcore32/MC6/main/main.lua"))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/teamkernelcore86/MC6/main/main.lua"))()
             </code>
         </pre>
     </div>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy to Clipboard</button>
 
-    <button id="copyButton" onclick="copyToClipboard()">Copy to Clipboard</button>
+    <div class="code-container language-javascript">
+        <pre>
+            <code>
+                // Second code snippet goes here
+            </code>
+        </pre>
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy to Clipboard</button>
 
     <script>
-        function copyToClipboard() {
-            var container = document.getElementById("container");
+        function copyToClipboard(button) {
+            var container = button.previousElementSibling;
             var textArea = document.createElement("textarea");
             textArea.value = container.innerText;
             document.body.appendChild(textArea);
