@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <style>
-        #codeBox {
+        #container {
             border: 1px solid #ccc;
             padding: 10px;
             margin-bottom: 20px;
             font-family: 'Courier New', monospace;
-            height: 100px;
+            height: 150px;
             overflow: auto;
         }
 
@@ -27,7 +27,7 @@
     </style>
 </head>
 <body>
-    <div id="codeBox" class="language-javascript">
+    <div id="container" class="language-lua">
         <pre>
             <code>
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/kernelcore32/MC6/main/main.lua"))()
@@ -39,9 +39,9 @@
 
     <script>
         function copyToClipboard() {
-            var codeBox = document.getElementById("codeBox");
+            var container = document.getElementById("container");
             var textArea = document.createElement("textarea");
-            textArea.value = codeBox.innerText;
+            textArea.value = container.innerText;
             document.body.appendChild(textArea);
 
             textArea.select();
