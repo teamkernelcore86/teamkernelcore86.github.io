@@ -30,6 +30,14 @@
             overflow: auto;
         }
 
+        .separator {
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            background-color: #ccc;
+            margin: 0 5px;
+        }
+
         .copy-btn {
             cursor: pointer;
             padding: 5px 10px;
@@ -90,10 +98,32 @@
         </tr>
     </table>
 
-    <h2>About</h2>
+    <h2 id="about">About</h2>
     <p>Team Kernel Core 86 is a group of Lua scripters. It was originally founded to create and maintain the Noto Executor in C# but I later
     decided to change it to lua scripting. Team Kernel Core 86 creates guis, scripts and enviroment changers to change the enviroment of a experience
     within Roblox.</p>
+
+    <h2 id="recommended">Recommended</h2> 
+    <p></p>
+
+    <div class="box-container">
+        <div class="info-box">
+        <h3>Fluxus</h3>
+        <p>Maintained: <span class="separator"></span> No</p>
+        <p>Bypasses Hyperion: <span class="separator"></span> Yes</p>
+        <p>Safe: <span class="separator"></span> Yes</p>
+        <p>Status: <span class="separator"></span> Patched</p>
+    </div>
+
+        <div class="info-box">
+        <h3>NetflixCE</h3>
+        <p>Maintained: <span class="separator"></span> Yes</p>
+        <p>Bypasses Hyperion: <span class="separator"></span> Yes</p>
+        <p>Safe: <span class="separator"></span> Yes</p>
+        <p>Status: <span class="separator"></span> Running</p>
+    </div>
+        
+</div>
 
     <script>
         function copyToClipboard(button) {
