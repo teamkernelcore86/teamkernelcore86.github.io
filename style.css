@@ -1,4 +1,9 @@
-body {
+body.light-theme {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+body.dark-theme {
     background-color: #333333;
     color: #ffffff;
 }
@@ -13,9 +18,7 @@ body {
 }
 
 .license-box {
-    border: 1px solid #666;
-    background-color: #444;
-    color: #ffffff;
+    border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
     font-family: Arial, sans-serif;
@@ -28,6 +31,17 @@ body {
     line-height: 1.4;
 }
 
+body.light-theme .license-box {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+body.dark-theme .license-box {
+    border: 1px solid #666;
+    background-color: #444;
+    color: #ffffff;
+}
+
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -36,14 +50,24 @@ body {
 }
 
 .feature-card {
-    border: 1px solid #666;
+    border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
-    background-color: #444;
-    color: #ffffff;
     text-align: center;
 }
 
 .feature-card h3 {
     margin-top: 0;
 }
+
+body.light-theme .feature-card {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+body.dark-theme .feature-card {
+    border: 1px solid #666;
+    background-color: #444;
+    color: #ffffff;
+}
+
