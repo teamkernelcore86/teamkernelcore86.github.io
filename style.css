@@ -19,6 +19,7 @@ body.dark-theme {
 
 .license-box {
     border: 1px solid #ccc;
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 5px;
     font-family: Arial, sans-serif;
@@ -51,6 +52,7 @@ body.dark-theme .license-box {
 
 .feature-card {
     border: 1px solid #ccc;
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
@@ -70,4 +72,3 @@ body.dark-theme .feature-card {
     background-color: #444;
     color: #ffffff;
 }
-
